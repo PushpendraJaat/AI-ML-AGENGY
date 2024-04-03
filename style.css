@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
 }
 
 html,
 body{
     height: 100%;
     width: 100%;
-    background-color: #111111;
-    color: #FFFFFF;
-    font-family:Verdana, Tahoma, sans-serif;
 }
 
 
@@ -22,6 +21,8 @@ nav{
     height: 12vh;
     justify-content: space-between;
     padding: 2vw 5vw;
+    z-index: 50;
+    background-color: #111111;
 }
 
 nav h1{
@@ -34,7 +35,6 @@ nav h1{
     padding: .6vh;
     gap: 2vw;
     position: relative;
-    z-index: 10;
 }
 .nav-part2 h4{
     font-size: .76vw;
@@ -107,6 +107,7 @@ nav button svg{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #111111;
 }
 .hero{
     margin-top: 6vh;
@@ -125,19 +126,18 @@ nav button svg{
 }
 .hero-child{
     margin-top: 4rem;
+    
 }
 .para{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .para p{
     font-size: 1rem;
     border: 1px solid #b8b3b3;
     border-radius: 50px;
     padding: 8px 5px;
-   
 }
 .para p:nth-child(3){
     border: none;
@@ -148,17 +148,113 @@ nav button svg{
 
 
 #moving-div{
-    background-color: red;
+    margin-top: 10vh;
+    padding: 2vw;
     position: absolute;
-    width: 75%;
-    display: flex;
- 
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: 3%;
+    width: 44%;
+
 }
 
 .move{
-    bottom: 0;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .move img{
     height: 2.5vh;
+    margin: 0 1vw;
+}
+
+#fade-left{
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    z-index: 10;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: linear-gradient(to right, #111111, transparent);
+}
+#fade-right{
+    background-color: red;
+    height: 100%;
+    width: 20%;
+    z-index: 10;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background: linear-gradient(to left, #111111 , transparent);
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* page 2 css code start here */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 10.5vw;
+    padding-bottom: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    background-color: #111111;
+}
+#page2-left{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+   
+}
+#page2-right{
+    height: 100%;
+    width: 55%;
+}
+
+#page2-left p{
+    font-size: .8vw;
+}
+#page2-left h5{
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+.right-elem{
+    position: relative;
+    padding-top: 1vw;
+    padding-bottom: 6vw;
+    border-bottom: 1px solid #333;
+}
+.right-elem h2{
+    font-size: 1.25vw;
+    font-weight: 400;
+}
+.right-elem img{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
 }

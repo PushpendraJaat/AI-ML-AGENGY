@@ -42,3 +42,34 @@ nav.addEventListener("mouseleave", function(){
 })
 }
 navAnimation(); 
+
+
+function page2Animation(){
+const elem = document.querySelectorAll(".right-elem");
+
+elem.forEach(function(el){
+    el.addEventListener("mouseenter", function(){
+        gsap.to(el.childNodes[3],{
+            opacity:1,
+            scale:1
+        })
+    })
+
+    el.addEventListener("mouseleave", function(){
+        gsap.to(el.childNodes[3],{
+            opacity:0,
+            scale:0
+        })
+    })
+
+    el.addEventListener("mousemove", function(dets){
+        gsap.to(el.childNodes[3],{
+            x:dets.x - el.getBoundingClientRect().x-80,
+            y:dets.y - el.getBoundingClientRect().y-80
+        })
+
+    })
+})
+
+}
+page2Animation();
