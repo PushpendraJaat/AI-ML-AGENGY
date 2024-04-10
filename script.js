@@ -41,7 +41,7 @@ nav.addEventListener("mouseleave", function(){
     })
 })
 }
-navAnimation(); 
+
 
 
 function page2Animation(){
@@ -70,6 +70,38 @@ elem.forEach(function(el){
 
     })
 })
-
 }
+
+
+
+function page3VideoAnimation(){
+    
+var page3Play = document.querySelector(".page3-play")
+var video = document.querySelector("#page3 video")
+
+page3Play.addEventListener("click", function(){
+    video.play()
+
+    gsap.to(video,{
+        transform: "scaleX(1) scaleY(1)",
+        opacity: 1,
+        borderRadius: 0 
+    })
+
+video.addEventListener("click", function(){
+    video.pause()
+    gsap.to(video,{
+        opacity: 0,
+        borderRadius: "30px",
+        transform: "scaleX(.7) scaleY(0)"
+
+    })
+})    
+    
+})
+}
+
+
+navAnimation(); 
 page2Animation();
+page3VideoAnimation()
