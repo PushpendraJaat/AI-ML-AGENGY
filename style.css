@@ -321,3 +321,114 @@ nav button svg{
     opacity: 1;
     transform: translateY(0%);
 }
+ 
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: 13vh;
+    background-color: #FFFFFF;
+}
+
+.section{
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+}
+
+.sec-left{
+    height: 100%;
+    width: 25%;
+    /* background-color: #0DA34E; */
+    padding: 3vh 5vh;
+    border-top: 2px solid #111111;
+}
+.sec-left h2{
+    font-size: 2.1vw;
+    font-weight: 500;
+    color: #111111;
+}
+.sec-left p{
+    font-size: 1vw;
+    color: #111111;
+    margin-top: 5vh;
+    /* width: 90%; */
+}
+.sec-right{
+    height: 100%;
+    width: 60%;
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+.sec-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sec-right video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity ease 0.1s;
+}
+
+.page5{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vh 10vw;
+    position: relative;
+    background-color: #111111;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.page5>button{
+    background-color: #0DA34E;
+    padding: .9vw 2.5vw;
+    font-size: 1vw;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+.page5-right{
+    width: 70%;
+}
+.page5-right>p{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.page5-right>p span{
+    width: 15vw;
+    display: inline-block;
+}
+#page5-content{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5vh;
+    padding: 5vh 0;
+    border-top: 2px solid #FFFFFF;
+}
+#page5-content>h1{
+    font-size: 3vw;
+}
+#page5-content #flex{
+    display: flex;
+    margin-top: 4vh;
+}
+#page5-content #flex>h4{
+  
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 2vh 2.5vw;
+    font-size: 1vw;
+    font-weight: 400;
+
+}
