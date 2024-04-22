@@ -99,14 +99,6 @@ video.addEventListener("click", function(){
 })    
     
 })
-}
-
-
-navAnimation(); 
-page2Animation();
-page3VideoAnimation()
-
-
 
 var sections = document.querySelectorAll(".sec-right")
 
@@ -121,3 +113,29 @@ sections.forEach(function(elem){
        elem.childNodes[3].load()
    })
 })
+
+}
+
+
+
+
+navAnimation(); 
+page2Animation();
+page3VideoAnimation()
+
+
+gsap.to("#btm-part2 h4",{
+    x:150,
+    duration:1,
+    stagger:{
+        amount:-0.5
+    },
+    scrollTrigger:{
+        trigger:"#btm-part2",
+        scroller:"body",
+        markers:true,
+        start:"top 80%",
+        end:"top -50%"
+    }
+})
+
