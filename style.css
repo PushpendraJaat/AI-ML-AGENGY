@@ -64,11 +64,6 @@ nav h1{
     background-color: #111111;
     z-index: -1;
 }
-
-
-
-
-
 .bottom-div h5{
     overflow: hidden;
     margin-bottom: 0.4vw;
@@ -93,12 +88,6 @@ nav button svg{
     margin-left: 10px;
 }
 
-
-
-
-
-
-
 .page1{
     height: 100vh;
     width: 100vw;
@@ -108,6 +97,7 @@ nav button svg{
     justify-content: center;
     text-align: center;
     background-color: #111111;
+    position: relative;
 }
 .hero{
     margin-top: 6vh;
@@ -146,7 +136,6 @@ nav button svg{
     border: none;
 }
 
-
 #moving-div{
     margin-top: 10vh;
     padding: 2vw;
@@ -155,7 +144,6 @@ nav button svg{
     overflow: hidden;
     bottom: 3%;
     width: 44%;
-
 }
 
 .move{
@@ -280,7 +268,7 @@ nav button svg{
     transform: scaleX(0.7) scaleY(0);
     opacity: 0;
     border-radius: 30px;
-
+    z-index: 100;
 
 }
 .page3-play{
@@ -568,6 +556,24 @@ summary::marker{
     width: 28%;
     height: 100%;
 }
+#btm-part2 h4:nth-child(2){
+    transform: translateX(0%);
+}
+#btm-part2 h4:nth-child(3){
+    transform: translateX(10%);
+}
+#btm-part2 h4:nth-child(4){
+    transform: translateX(20%);
+}
+#btm-part2 h4:nth-child(5){
+    transform: translateX(30%);
+}
+#btm-part2 h4:nth-child(6){
+    transform: translateX(40%);
+}
+#btm-part2 h4:nth-child(7){
+    transform: translateX(50%);
+}
 #btm-part3{
     border-right: 1px solid #dadada;
     width: 15%;
@@ -603,6 +609,7 @@ summary::marker{
     display: flex;
     align-items: center;
 }
+
 .bottom6-parts h4 span{
     display: flex;
     align-items: center;
@@ -618,5 +625,5 @@ summary::marker{
 .page7{
     height: 100vh;
     width: 100%;
-    background-color: gold;
+    background-color: #111111;
 }
